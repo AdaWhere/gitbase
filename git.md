@@ -55,8 +55,13 @@ $ git pull gitlab master
 
  ## 3.删除分支 git branch -d branchname
 
+# 9删除指令
+   ## 1 删除本地   .git 文件
+     $ ls -a   查询是否有 git  文件
+     $ rm -rf .git    删除 .git  文件
+   ## 2. 删除本地 仓库目录
 
- 
+     $ rm -rf  floder(仓库名字)
 # 1. 查询本机是否有ssh
   $ cd ~/.ssh
   $ ls
