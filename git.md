@@ -59,8 +59,12 @@ $ git pull gitlab master
 
    切换回主分支 master  git checkout master
    合并分支  git merge branchname 
+   将本地分支推送到远程分支上:
+   git puhs origin test: master (将本地分支推送到master 分支上)
+   git push origin test : test (将本地分支推送到远程分支，作为远程的test 分支)
 
- ## 3.删除分支 git branch -d branchname
+ ## 3.删除本地分支 git branch -d branchname
+ ## 4.删除远程 分支 git push origin --delete cvt-228
 
 # 9 删除指令
 
@@ -131,3 +135,5 @@ $ rm id_rsa*
 
 $ ssh-keygen  生成公钥
 $ ssh-keygen -t rsa -C "your email url"
+# 6. git 撤销commit ： git reset -hard HEAD~1 
+# 7. git fetch  --all 拉取远程新的分支和代码
