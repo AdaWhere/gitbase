@@ -48,20 +48,20 @@ $ git pull gitlab master
 # 8 创建分支 合并分支，删除分支
 
  ## 1.创建分支 git branch branchname
-    切换分支 git checkout branchname 
-    查看当前分支  git branch
-    提交本地代码
-    git add .
-    git commit -m "fc"
-    git push  gitlab(源名) branchname (源生的另外一个分支)
+    - 切换分支 git checkout branchname 
+    - 查看当前分支  git branch
+    - 提交本地代码
+    - git add .
+    - git commit -m "fc"
+    - git push  gitlab(源名) branchname (源生的另外一个分支)
 
  ## 2.合并分支 
 
-   切换回主分支 master  git checkout master
-   合并分支  git merge branchname 
-   将本地分支推送到远程分支上:
-   git puhs origin test: master (将本地分支推送到master 分支上)
-   git push origin test : test (将本地分支推送到远程分支，作为远程的test 分支)
+   - 切换回主分支 master  git checkout master
+   - 合并分支  git merge branchname 
+   - 将本地分支推送到远程分支上:
+      - git puhs origin test: master (将本地分支推送到master 分支上)
+      - git push origin test : test (将本地分支推送到远程分支，作为远程的test 分支)
 
  ## 3.删除本地分支 git branch -d branchname
  ## 4.删除远程 分支 git push origin --delete cvt-228
@@ -89,7 +89,8 @@ $ git pull gitlab master
 
 # 2 ssh-keygen 创建ssh
 
-  出现以下代码
+  1. 出现以下代码
+ ```javasacript 
   $ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/schacon/.ssh/id_rsa):
@@ -99,11 +100,14 @@ Your identification has been saved in /Users/schacon/.ssh/id_rsa.
 Your public key has been saved in /Users/schacon/.ssh/id_rsa.pub.
 The key fingerprint is:
 43:c5:5b:5f:b1:f1:50:43:ad:20:a6:92:6a:1f:9a:3a schacon@agadorlaptop.local
+```
 
 
 # 3 查询 公钥
 
+```javascript
  $ cat ~/.ssh/id_rsa.pub
+```
 
  公钥
  ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
@@ -115,9 +119,9 @@ NrRFi9wrf+M7Q== schacon@agadorlaptop.local
 
 # 5 本机每次产生的 公钥是唯一的
  
-  每次替换 ，要一一对应远程的ssH 公钥
+  - 每次替换 ，要一一对应远程的ssH 公钥
 
-  生成ssh 首次登陆yes 
+  - 生成ssh 首次登陆yes 
 
 # 6删除多余的 ssh   
    添加新的ssh 
